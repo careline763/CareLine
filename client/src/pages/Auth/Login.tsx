@@ -208,8 +208,12 @@ export default function Login() {
                   <div className="absolute inset-0 flex items-center">
                     <div className="w-full border-t border-luxuryDark-border/60"></div>
                   </div>
-                  <div className="relative flex justify-center text-xs uppercase">
-                    <span className="bg-luxuryDark-card px-4 text-gray-600 tracking-widest font-bold">Secure Login</span>
+                  <div className="relative flex justify-center">
+                    <span className="bg-luxuryDark-card px-6 text-gray-600 tracking-[0.3em] font-bold text-xs uppercase" style={{ 
+                      backgroundImage: 'linear-gradient(transparent calc(50% - 0.5px), rgba(197, 168, 128, 0.4) calc(50% - 0.5px), rgba(197, 168, 128, 0.4) calc(50% + 0.5px), transparent calc(50% + 0.5px))'
+                    }}>
+                      Secure Login
+                    </span>
                   </div>
                 </div>
 

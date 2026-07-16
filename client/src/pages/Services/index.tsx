@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Droplets, Wind, Sparkles, Car } from 'lucide-react';
-import Card from '../../components/common/Card';
 import Loader from '../../components/common/Loader';
-import Button from '../../components/common/Button';
 import { useNavigate } from 'react-router-dom';
 import type { ServiceItem } from '../../types';
 

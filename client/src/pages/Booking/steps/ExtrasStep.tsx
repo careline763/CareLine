@@ -1,6 +1,5 @@
 import { Plus, Minus, Sparkles } from 'lucide-react';
 import { useBookingStore } from '../../../features/bookingStore';
-import Button from '../../../components/common/Button';
 
 const EXTRAS = [
   { id: 101, name: 'Interior Vacuum', price: 199 },
@@ -14,7 +13,7 @@ export default function ExtrasStep() {
   const { form, updateForm, nextStep, prevStep } = useBookingStore();
   const extras = form.extras || [];
 
-  const toggle = (id: number, price: number) => {
+  const toggle = (id: number) => {
     const isSelected = extras.includes(id);
     const newExtras = isSelected ? extras.filter((e) => e !== id) : [...extras, id];
     const extraTotal = newExtras.reduce((sum, eid) => {
@@ -61,7 +60,7 @@ export default function ExtrasStep() {
                 <span className="text-xs text-gray-500 ml-3 font-mono">+₹{extra.price}</span>
               </div>
               <button
-                onClick={() => toggle(extra.id, extra.price)}
+                onClick={() => toggle(extra.id)}
                 className={`w-10 h-10 rounded-sm flex items-center justify-center transition-all duration-300 border-2 ${
                   selected 
                     ? 'bg-luxuryGold border-luxuryGold text-black shadow-lg shadow-luxuryGold/20' 

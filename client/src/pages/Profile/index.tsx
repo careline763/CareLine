@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { User, Car, ChevronRight, LifeBuoy, Plus, Mail, Phone } from 'lucide-react';
+import { User, Car, ChevronRight, LifeBuoy, Plus, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useAuthStore } from '../../features/authStore';
 import Button from '../../components/common/Button';

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { MapPin, CheckCircle, XCircle, Loader2 } from 'lucide-react';
 import { useBookingStore } from '../../../features/bookingStore';
-import Button from '../../../components/common/Button';
 import { checkPincode } from '../../../services/plans.service';
 import type { ServiceArea } from '../../../types';
 import toast from 'react-hot-toast';

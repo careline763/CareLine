@@ -1,32 +1,129 @@
-# React + TypeScript + Vite
+# 🚗 CareLine - Customer Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Premium doorstep car care platform with luxury APEX MOTORS dark theme.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🎨 Luxury dark theme with gold accents
+- 📱 Fully responsive design
+- 🛒 6-step booking flow
+- 💳 Razorpay payment integration
+- 🗺️ Interactive maps with Leaflet
+- 🔔 Real-time notifications
+- 📊 Booking history and tracking
+- 💰 Wallet management
+- 🎟️ Coupon system
+- ⭐ Rating and reviews
 
-## React Compiler
+## 🚀 Quick Start
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Development
 
-## Expanding the Oxlint configuration
+```bash
+# Install dependencies
+npm install
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+# Start development server
+npm run dev
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+# Open http://localhost:5173
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### Build
+
+```bash
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## 🌐 Deploy to Vercel
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.
+
+**Quick Deploy**:
+
+1. Push code to GitHub
+2. Import project in Vercel
+3. Set Root Directory to `client`
+4. Add environment variables
+5. Deploy!
+
+## 🔧 Environment Variables
+
+Create a `.env` file:
+
+```env
+VITE_API_URL=https://your-api.com/api
+VITE_SOCKET_URL=https://your-api.com
+VITE_RAZORPAY_KEY_ID=your_razorpay_key
+```
+
+## 📦 Tech Stack
+
+- **React** 19.2.7
+- **TypeScript** 6.0.2
+- **Vite** 8.1.0
+- **Tailwind CSS** 4.3.1
+- **Zustand** (State Management)
+- **React Router** 7.18.0
+- **Axios** (HTTP Client)
+- **Leaflet** (Maps)
+- **Socket.io** (Real-time)
+
+## 📁 Project Structure
+
+```
+client/
+├── public/          # Static assets
+├── src/
+│   ├── assets/      # Images, icons
+│   ├── components/  # Reusable components
+│   ├── features/    # Zustand stores
+│   ├── pages/       # Route pages
+│   ├── routes/      # Route config
+│   ├── services/    # API services
+│   └── types/       # TypeScript types
+├── .env             # Environment variables
+├── vercel.json      # Vercel config
+└── package.json
+```
+
+## 🎨 Design System
+
+### Colors
+- **Dark Base**: `#0A0A0A`
+- **Dark Card**: `#141414`
+- **Luxury Gold**: `#C5A880`
+
+### Typography
+- **Headings**: Playfair Display (Serif)
+- **Body**: Montserrat (Sans-serif)
+
+## 📝 Available Scripts
+
+| Script | Description |
+|--------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run Oxlint |
+
+## 🐛 Troubleshooting
+
+### Build fails
+```bash
+rm -rf node_modules package-lock.json
+npm install
+npm run build
+```
+
+### Environment variables not working
+- Variables must start with `VITE_`
+- Restart dev server after changes
+
+## 📄 License
+
+Proprietary and confidential. All rights reserved.

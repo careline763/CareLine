@@ -1,10 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 import { 
-  CheckCircle, Clock, Shield, Star, Droplets, Car, ChevronRight, Sparkles,
-  Award, Users, MapPin, TrendingUp, Zap, Heart, CalendarCheck, Phone
+  CheckCircle, Clock, Shield, Star, Droplets, ChevronRight, Sparkles,
+  Award, Users, MapPin, CalendarCheck, Phone
 } from 'lucide-react';
-import Button from '../../components/common/Button';
 
 const features = [
   { icon: Clock, title: 'Doorstep Service', desc: 'We come to your home, office, or society — no need to go anywhere.' },

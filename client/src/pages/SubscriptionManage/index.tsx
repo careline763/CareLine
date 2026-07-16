@@ -22,7 +22,7 @@ const MOCK_SUBS: Subscription[] = [
 ];
 
 export default function SubscriptionManage() {
-  const { subscriptions, loading, pause, resume, cancel } = useSubscriptionStore();
+  const { loading } = useSubscriptionStore();
   const [subs, setSubs] = useState<Subscription[]>([]);
   const [cancelModal, setCancelModal] = useState<number | null>(null);
   const [actionLoading, setActionLoading] = useState<number | null>(null);

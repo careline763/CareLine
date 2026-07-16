@@ -17,6 +17,7 @@ export async function subscribeToPush(): Promise<void> {
 
     const sub = await reg.pushManager.subscribe({
       userVisibleOnly: true,
+      // @ts-ignore - Type compatibility issue with ArrayBuffer
       applicationServerKey: urlBase64ToUint8Array(vapidKey),
     });
 

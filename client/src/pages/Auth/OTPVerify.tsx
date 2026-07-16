@@ -51,7 +51,7 @@ export default function OTPVerify() {
     if (code.length !== 6) return toast.error('Enter the 6-digit OTP');
     setLoading(true);
     try {
-      const { data } = await verifyOTP(phone, code);
+      const { data } = await verifyOTP(phone!, code);
       const result = (data as any)?.data;
       if (!result?.user || !result?.access_token) throw new Error('Invalid response');
       setAuth(result.user as User, result.access_token);
@@ -66,7 +66,7 @@ export default function OTPVerify() {
 
   const handleResend = async () => {
     try {
-      const res = await sendOTP(phone);
+      const res = await sendOTP(phone!);
       const newDevOtp = (res.data as any)?.data?.dev_otp as string | undefined;
       setResendTimer(30);
       if (newDevOtp) {

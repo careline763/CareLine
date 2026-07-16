@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Calendar, Zap, Clock } from 'lucide-react';
 import { useBookingStore } from '../../../features/bookingStore';
-import Button from '../../../components/common/Button';
 import api from '../../../services/api';
 
 const TIME_SLOTS = [

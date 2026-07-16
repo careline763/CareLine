@@ -1,7 +1,6 @@
-import { CheckCircle, Zap, Crown, Package as PackageIcon } from 'lucide-react';
+import { CheckCircle, Crown, Package as PackageIcon } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useBookingStore } from '../../../features/bookingStore';
-import Button from '../../../components/common/Button';
 import Loader from '../../../components/common/Loader';
 import type { Plan } from '../../../types';
 

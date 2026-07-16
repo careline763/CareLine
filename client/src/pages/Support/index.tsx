@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { MessageCircle, Phone, Mail, ChevronDown } from 'lucide-react';
-import Button from '../../components/common/Button';
 import toast from 'react-hot-toast';
 
 const FAQS = [

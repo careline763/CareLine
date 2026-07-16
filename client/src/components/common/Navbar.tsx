@@ -77,7 +77,7 @@ export default function Navbar() {
                 </button>
               </>
             ) : (
-              <Link to="/login" className="bg-luxuryGold hover:bg-luxuryGold-light text-black text-xs font-bold tracking-widest px-5 py-2.5 rounded-sm transition-all duration-300 uppercase">
+              <Link to="/login" className="bg-transparent border-2 border-luxuryGold hover:bg-luxuryGold text-luxuryGold hover:text-black text-xs font-bold tracking-widest px-5 py-2.5 rounded-sm transition-all duration-300 uppercase">
                 Login / Sign Up
               </Link>
             )}
